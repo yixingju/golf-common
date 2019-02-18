@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pb.dao.BrandMapper">
+    <resultMap id="BrandResultMap" type="com.pb.pojo.Brand">
+        <id property="id" column="id"/>
+        <result property="chineseName" column="chineseName"/>
+        <result property="englishName" column="englishName"/>
+        <result property="createDate" column="createDate"/>
+        <result property="modifyDate" column="modifyDate"/>
+        <result property="type" column="type"/>
+        <result property="story" column="story"/>
+        <result property="status" column="status"/>
+    </resultMap>
+    <select id="findByPage" resultMap="BrandResultMap">
+        SELECT `id`,`chineseName`,`englishName`,`createDate`,`modifyDate`,`type`,`story`,`status` FROM `b_brand`;
+    </select>
+</mapper>
