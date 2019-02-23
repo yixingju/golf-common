@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pb.repository.PointRepository">
+    <!--插入积分-->
+    <insert id="insertPoint">
+      insert into golf_point (m_id,m_point) values (m_id=#{m_id},0)
+    </insert>
+    <!--修改积分-->
+    <update id="updatePoint">
+      update golf_point
+      <trim prefix="set" prefixOverrides=",">
+          <if test="m_point !=null and m_point !=''">
+              m_point=#{m_point}
+          </if>
+      </trim>
+       where m_id=#{m_id}
+    </update>
+    <!--个人积分0-->
+    <update id="zeroPoint">
+    update golf_point set m_point=0 where m_id=#{m_id}
+    </update>
+    <!--所有人积分0-->
+    <update id="zeroAll">
+      update golf_point set m_point=0
+    </update>
+    <!--删除积分-->
+    <delete id="delPoint">
+      delete from golf_point where m_id=#{m_id}
+    </delete>
+    <!--查询所有积分-->
+    <select id="findAll" resultType="com.pb.pojo.Point">
+        select m_id,m_point from golf_point
+    </select>
+    <!--id个人积分查询-->
+    <select id="findById" resultType="com.pb.pojo.Point">
+         select m_id,m_point from golf_point
+         <where>
+             <if test="m_id!=null and m_id!=''">
+                 m_id=#{m_id}
+             </if>
+         </where>
+    </select>
+</mapper>
