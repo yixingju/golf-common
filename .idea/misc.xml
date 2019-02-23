@@ -5,12 +5,18 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/golf-common-util/pom.xml" />
+=======
+>>>>>>> Stashed changes
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/golf-common-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/golf-common-repository/pom.xml" />
+        <option value="$PROJECT_DIR$/golf-common-service/pom.xml" />
         <option value="$PROJECT_DIR$/golf-generator-sql/pom.xml" />
       </set>
     </option>
@@ -22,11 +28,15 @@
   <component name="ProjectResources">
     <resource url="http://mybatis.org/dtd/mybatis-3-config.dtd" location="$PROJECT_DIR$/../Video/mybatis-3-config.dtd" />
   </component>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
 =======
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
 >>>>>>> 41457559e2fc8b7c4ac8b123790b78b64fc4ff37
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
+>>>>>>> Stashed changes
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
