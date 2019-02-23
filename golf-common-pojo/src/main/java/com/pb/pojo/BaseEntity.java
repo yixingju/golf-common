@@ -9,6 +9,6 @@ import java.io.Serializable;
  * @Date 2019/2/20 13:46
  * @Version 1.0
  */
-public class BaseEntity implements Serializable {
+public class BaseEntity implements Serializable{
 
 }
