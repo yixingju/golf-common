@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Golf-common.iml" filepath="$PROJECT_DIR$/Golf-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/golf-common-pojo/Golf-common-pojo.iml" filepath="$PROJECT_DIR$/golf-common-pojo/Golf-common-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/golf-common-repository/Golf-common-repository.iml" filepath="$PROJECT_DIR$/golf-common-repository/Golf-common-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/golf-common-service/Golf-common-service.iml" filepath="$PROJECT_DIR$/golf-common-service/Golf-common-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/golf-common-util/Golf-common-util.iml" filepath="$PROJECT_DIR$/golf-common-util/Golf-common-util.iml" />
+    </modules>
+  </component>
+</project>

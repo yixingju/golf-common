@@ -6,16 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="generator-sql" />
         <module name="Golf-common-pojo" />
-        <module name="golf-common-pojo" />
         <module name="Golf-common-repository" />
         <module name="Golf-common-service" />
         <module name="Golf-common-util" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="generator-sql" target="1.7" />
+      <module name="Golf-common" target="1.7" />
+      <module name="golf-common" target="1.7" />
+      <module name="Golf-common-pojo" target="1.7" />
+      <module name="Golf-common-repository" target="1.7" />
+      <module name="Golf-common-service" target="1.7" />
+      <module name="Golf-common-util" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
