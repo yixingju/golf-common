@@ -3,7 +3,7 @@ package com.pb.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Brand implements Serializable{
+public class Brand implements Serializable {
     private long id;
     private Date createDate;
     private Date modifyDate;
