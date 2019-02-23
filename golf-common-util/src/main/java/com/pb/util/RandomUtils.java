@@ -2,7 +2,7 @@ package com.pb.util;
 
 import java.util.Random;
 
-public class RandomUtils {
+public class RandomUtils{
 
     /*
      * @Author: sunmingjun

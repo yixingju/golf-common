@@ -10,5 +10,4 @@ import java.io.Serializable;
  * @Version 1.0
  */
 public class BaseEntity implements Serializable{
-
 }

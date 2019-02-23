@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface RpcBrandService {
     List<Brand> findByPage();
+
     //List<Brand> findByVague();
 }

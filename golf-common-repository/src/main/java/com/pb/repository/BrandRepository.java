@@ -9,7 +9,6 @@ import java.util.List;
 
 @Mapper
 public interface BrandRepository {
-    @Select("select * from b_brand")
     List<Brand> findByPage();
     //List<Brand> findByVague();
 }

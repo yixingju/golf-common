@@ -6,7 +6,6 @@
         id,createDate,modifyDate,`name`,address,`desc`,score,status
     </sql>
 
-
     <insert id="saveCourse">
         INSERT INTO game_course(<include refid="allColumn"/>) VALUE
         <if test="createDate!=null and createDate!=''">

@@ -14,7 +14,6 @@ import java.util.List;
  */
 @Mapper
 public interface MemberRepository {
-
     /**
      * 获取所有会员
      * @return

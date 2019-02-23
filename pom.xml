@@ -8,6 +8,7 @@
   <artifactId>Golf-common</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+
   <modules>
     <module>Golf-common-pojo</module>
     <module>Golf-common-repository</module>

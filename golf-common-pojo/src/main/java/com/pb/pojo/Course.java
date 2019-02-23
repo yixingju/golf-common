@@ -9,7 +9,7 @@ import java.util.Date;
  * @Date 2019/2/20 13:45
  * @Version 1.0
  */
-public class Course extends BaseEntity {
+public class Course extends BaseEntity{
 
     private static final long serialVersionUID = -2289497005626430918L;
 

@@ -4,7 +4,7 @@ import com.github.pagehelper.PageInfo;
 import com.pb.pojo.Point;
 import org.apache.ibatis.annotations.Param;
 
-public interface RpcPointService {
+public interface RpcPointService{
     /*
      * @Author: sunmingjun
      * @Description:查询所有积分

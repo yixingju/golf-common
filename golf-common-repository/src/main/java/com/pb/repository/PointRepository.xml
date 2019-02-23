@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.pb.repository.PointRepository">
+
     <!--插入积分-->
     <insert id="insertPoint">
       insert into golf_point (m_id,m_point) values (m_id=#{m_id},0)

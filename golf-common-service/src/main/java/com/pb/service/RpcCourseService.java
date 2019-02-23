@@ -9,7 +9,7 @@ import com.pb.pojo.Course;
  * @Author 侨居
  * @Date 2019/2/20 14:35
  */
-public interface RpcCourseService {
+public interface RpcCourseService{
 
     /**
      * 获取所有球场信息（带分页）

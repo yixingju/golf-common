@@ -6,7 +6,7 @@ import java.util.UUID;
 /**
  * Created by shuzheng on 2017/1/19.
  */
-public class MD5Util {
+public class MD5Util{
 
     public final static String md5(String content) {
         //用于加密的字符

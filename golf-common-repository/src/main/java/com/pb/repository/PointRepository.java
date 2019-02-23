@@ -4,7 +4,7 @@ import com.github.pagehelper.PageInfo;
 import com.pb.pojo.Point;
 import org.apache.ibatis.annotations.Param;
 
-public interface PointRepository {
+public interface PointRepository{
 
     /*
     * @Author: sunmingjun

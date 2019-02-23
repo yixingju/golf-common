@@ -1,6 +1,6 @@
 package com.pb.pojo;
 
-public class Point extends BaseEntity{
+public class Point extends BaseEntity {
     private static final long serialVersionUID = 2797826911351121472L;
 
     private Integer m_id;

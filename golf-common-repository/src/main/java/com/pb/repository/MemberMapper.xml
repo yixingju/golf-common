@@ -28,6 +28,7 @@
         SELECT <include refid="allColumn" /> FROM golf_member
         WHERE m_readme = #{username}
     </select>
+
     <select id="findMembersBySex" resultType="com.pb.pojo.Member">
         SELECT <include refid="allColumn" /> FROM golf_member
         <where>

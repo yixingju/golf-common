@@ -9,7 +9,7 @@ import com.pb.pojo.Member;
  * @Author 侨居
  * @Date 2019/2/21 15:15
  */
-public interface RpcMemberService {
+public interface RpcMemberService{
 
     /**
      *

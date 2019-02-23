@@ -13,7 +13,7 @@ import java.util.List;
  * @Date 2019/2/20 13:53
  */
 @Mapper
-public interface CourseRepository {
+public interface CourseRepository{
 
     /**
      * 获取所有球场

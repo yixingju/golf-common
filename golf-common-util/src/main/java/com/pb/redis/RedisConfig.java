@@ -10,7 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 
 @Configuration
 @EnableCaching//开启注解
-public class RedisConfig extends CachingConfigurerSupport {
+public class RedisConfig extends CachingConfigurerSupport{
 
     @Bean
     public CacheManager cacheManager(RedisTemplate<?,?> redisTemplate) {

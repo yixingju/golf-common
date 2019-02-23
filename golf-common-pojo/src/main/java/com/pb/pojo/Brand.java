@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Brand implements Serializable{
+
+    private static final long serialVersionUID = -5621590766906634188L;
+
     private long id;
     private Date createDate;
     private Date modifyDate;

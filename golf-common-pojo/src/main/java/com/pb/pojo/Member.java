@@ -2,7 +2,7 @@ package com.pb.pojo;
 
 import java.util.Date;
 
-public class Member extends BaseEntity {
+public class Member extends BaseEntity{
     private static final long serialVersionUID = 7480145947252095332L;
     private Integer m_id;
 
