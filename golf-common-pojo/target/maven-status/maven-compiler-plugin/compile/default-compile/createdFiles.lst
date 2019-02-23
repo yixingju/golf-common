@@ -1,0 +1,5 @@
+com\pb\App.class
+com\pb\pojo\Course.class
+com\pb\pojo\Brand.class
+com\pb\pojo\Member.class
+com\pb\pojo\BaseEntity.class

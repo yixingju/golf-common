@@ -1,0 +1,4 @@
+com\pb\App.class
+com\pb\service\RpcCourseService.class
+com\pb\service\RpcBrandService.class
+com\pb\service\RpcMemberService.class

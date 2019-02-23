@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pb.repository.CourseRepository">
+
+    <sql id="allColumn">
+        id,createDate,modifyDate,`name`,address,`desc`,score,status
+    </sql>
+
+
+    <insert id="saveCourse">
+        INSERT INTO game_course(<include refid="allColumn"/>) VALUE
+        <if test="createDate!=null and createDate!=''">
+            createDate = #{createDate},
+        </if>
+        <if test="modifyDate!=null and modifyDate!=''">
+            modifyDate = #{modifyDate},
+        </if>
+        <if test="name!=null and name!=''">
+            `name` = #{name},
+        </if>
+        <if test="address!=null and address!=''">
+            address = #{address},
+        </if>
+        <if test="desc!=null and desc!=''">
+            `desc` = #{desc},
+        </if>
+
+        <if test="score!=null and score!=''">
+            score = #{score},
+        </if>
+        <if test="status!=null and status!=''">
+            status = #{status},
+        </if>
+    </insert>
+
+    <update id="setCourseOpen">
+        UPDATE game_course SET status = 0 WHERE id=#{id}
+    </update>
+    <update id="setCourseClose">
+        UPDATE game_course SET status = 1 WHERE id=#{id}
+    </update>
+
+
+    <update id="updateCourse">
+        UPDATE game_course
+        <trim suffix="WHERE id=#{id}" suffixOverrides=",">
+            <set>
+                <if test="name!=null and name!=''">
+                    `name` = #{name},
+                </if>
+                <if test="address!=null and address!=''">
+                    address = #{address},
+                </if>
+                <if test="desc!=null and desc!=''">
+                    `desc` = #{desc},
+                </if>
+                <if test="modifyDate!=null and modifyDate!=''">
+                    modifyDate = #{modifyDate},
+                </if>
+                <if test="score!=null and score!=''">
+                    score = #{score},
+                </if>
+                <if test="status!=null and status!=''">
+                    status = #{status},
+                </if>
+            </set>
+        </trim>
+
+    </update>
+
+
+    <delete id="deleteCouserByName">
+      DELETE FROM game_course WHERE id = #{id}
+    </delete>
+
+    <select id="findAllCourse" resultType="com.pb.pojo.Course">
+        SELECT
+        <include refid="allColumn"/>
+        FROM game_course
+    </select>
+
+    <select id="findCourseByNameLike" resultType="com.pb.pojo.Course">
+        SELECT
+        <include refid="allColumn"/>
+        FROM game_course
+        <where>
+            <if test="name!=null and name !=''">
+                `name` LIKE CONCAT('%',#{name},'%')
+            </if>
+        </where>
+    </select>
+
+    <select id="findCouserByName" resultType="com.pb.pojo.Course">
+        SELECT
+        <include refid="allColumn"/>
+        FROM game_course WHERE `name` = #{name}
+
+    </select>
+    <select id="findCouserById" resultType="com.pb.pojo.Course">
+        SELECT
+        <include refid="allColumn"/>
+        FROM game_course WHERE id = #{id}
+    </select>
+
+    <select id="findCouserByAddress" resultType="com.pb.pojo.Course">
+        SELECT
+        <include refid="allColumn"/>
+        FROM game_course
+        <where>
+            <if test="address!=null and address!=''">
+                address LIKE #{address}
+            </if>
+        </where>
+
+    </select>
+
+
+</mapper>
